@@ -1,9 +1,9 @@
 === Shortcode for Current Date ===
 Contributors: imtiazrayhan, un_rick
-Tags: current date, current month, current year
+Tags: shortcode, current date, month, year
 Requires at least: 4.0
-Tested up to: 4.9
-Stable tag: 1.2.3
+Tested up to: 5.0
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,18 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.0.0 =
+
+* Tested with WordPress 5.0.
+
+= 1.2.5 = 
+
+* Fix - Day Number of the Year bug.
+
+= 1.2.4 =
+
+* Add - Shortcode execution in Post Title.
 
 = 1.2.3 =
 

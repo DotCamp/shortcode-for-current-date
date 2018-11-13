@@ -40,11 +40,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<br>
 		</div>
 		<div class="col">
-			<h3><?php _e( "Check Out another Cool Plugin!", 'sfcd' ); ?></h3>
-			<img src="<?php echo plugins_url( 'assets/img/banner-772x250.png', dirname( __FILE__ ) ); ?>">
-			Very lightweight and easy to use WordPress Coupons and deals plugin.
-			Generate more affiliate sales with coupon codes and deals. <br><br>
-			<a href="https://wordpress.org/plugins/wp-coupons-and-deals/">WP Coupons and Deals plugin</a> lets you add coupons, deals to your posts, pages with a simple and beautiful shortcode.<br><br>
+			<h3><?php _e( "Check Out This Cool Theme - Echoes!", 'sfcd' ); ?></h3>
+			Very lightweight, fast loading and responsive theme for blogging.<br><br>
+			<a href="https://wordpress.org/themes/echoes/" target="_blank">Echoes</a> lets you have a fast loading, optimized blog without thinking about the speed and design.<br><br>
+			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>">
 
 		</div>
 	</div>

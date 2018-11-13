@@ -19,12 +19,16 @@ class SFCD_Welcome_Page {
 	public static function sfcd_welcome_activate() {
 
 		set_transient('_sfcd_redirect_welcome', true, 30 );
+		add_option( 'sfcd_installDate', date( 'Y-m-d h:i:s' ) );
+		add_option( 'sfcd_review_notify', 'no' );
 
 	}
 
 	public static function sfcd_welcome_deactivate() {
 
 		delete_transient( '_sfcd_redirect_welcome' );
+		delete_option( 'sfcd_installDate', date( 'Y-m-d h:i:s' ) );
+		delete_option( 'sfcd_review_notify', 'no' );
 
 	}
 

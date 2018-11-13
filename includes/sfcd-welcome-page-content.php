@@ -36,6 +36,23 @@ if ( ! defined( 'ABSPATH' ) ) {
 		The shortcode basically uses the PHP date function to generate the date, month or year. That means, you can use any format the function accepts. <br>
 		<br>
 		You can check out the <a href="<?php echo admin_url('options-general.php?page=sfcd_menu_page'); ?>" target="_blank" rel="noopener noreferrer">date formats here</a>.
+
+	</div>
+	<div class="feature-section two-col">
+		<div class="col">
+			<h3>
+			<?php _e( "Check Out This Cool Theme - Echoes!", 'sfcd' ); ?></h3>
+			Very lightweight, fast loading and responsive theme for blogging.<br><br>
+			<a href="https://wordpress.org/themes/echoes/" target="_blank">Echoes</a> lets you have a fast loading, optimized blog without thinking about the speed and design.<br><br>
+			
+			It comes with customization option to change the layout settings, pagination settings, excerpt settings and footer settings.
+			<br><br>
+			<a href="https://wordpress.org/themes/echoes/" target="_blank"> Download Echoes NOW!</a>
+
+		</div>
+		<div class="col">
+			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>">			
+		</div>
 	</div>
 
 	<div class="feature-section two-col">
