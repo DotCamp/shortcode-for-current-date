@@ -5,3 +5,19 @@
     height: 20px;
     width: 140px;
 }
+
+.ub_download_btn {
+    font-size: 19px;
+    font-weight: 600;
+    color: #f63d3d;
+    padding: 25px;
+    border: 2px solid #f63d3d;
+    border-radius: 4px;
+    text-decoration: none;
+    margin: 20px auto;
+}
+
+.ub_download_btn:hover {
+    background: #f63d3d;
+    color: #fff;
+}

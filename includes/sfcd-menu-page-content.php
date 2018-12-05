@@ -28,28 +28,25 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<div class="feature-section two-col">
 		<div class="col">
 			<h3><?php _e( "Let's Get Started", 'sfcd' ); ?></h3>
-			<ul>
-				<li>In your post editor just put <strong>[current_date]</strong> where you want to show the date. </li>
-				<li>If you want to show the month or year you would have to add something to the shortcode.</li>
-				<li>You would need to write the shortcode like this: <br><br><strong>[current_date format='F, Y']</strong></li>
-			</ul>
+			<p class="about-text">
+				In your post editor just put <strong>[current_date]</strong> where you want to show the date.<br><br>
+				If you want to show the month or year you would have to add something to the shortcode.
+				You would need to write the shortcode like this: <br><br><strong>[current_date format='F, Y']</strong>
+			</p>
 
-			The shortcode basically uses the PHP date function to generate the date, month or year. <br><br>That means, you can use any format the function accepts. <br>
-			<br>
-			Check out the date formats and use the ones that suits your needs.
+			<p class="about-text">The shortcode basically uses the PHP date function to generate the date, month or year. <br><br>That means, you can use any format the function accepts.</p>
 			<br>
 		</div>
 		<div class="col">
-			<h3><?php _e( "Check Out This Cool Theme - Echoes!", 'sfcd' ); ?></h3>
-			Very lightweight, fast loading and responsive theme for blogging.<br><br>
-			<a href="https://wordpress.org/themes/echoes/" target="_blank">Echoes</a> lets you have a fast loading, optimized blog without thinking about the speed and design.<br><br>
-			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>">
-
+			<h3>Check Out This Cool Plugin - <span style="color: #f63d3d;"><a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank" style="color: #f63d3d;">Ultimate Blocks</span></a>!</h3>
+			<p class="about-text">Ultimate Blocks is a collection of essential custom blocks for Gutenberg Editor that makes it easier for you to create content with Gutenberg.</p>
+			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"><br><br><br>
+			<a class="ub_download_btn" href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
 		</div>
 	</div>
 
 	<div class="col">
-
+		<p class="about-text">Check out the date formats and use the ones that suits your needs.</p>
 		<table class="tbl1">
 			<thead>
 			<tr>

@@ -45,11 +45,11 @@ class SFCD_Admin_Notices {
 			?>
             <div class="sfcd-review-notice notice notice-info">
                 <p style="font-size: 14px;">
-					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! Could you please do me a BIG favor and <b>give it a 5-star rating on WordPress</b>? Just to help me spread the word and boost my motivation. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
+					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! If you find it useful, please consider making a donation. Your donation will help encourage and support the plugin’s continued development and better user support. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
-                           href="https://wordpress.org/support/plugin/shortcode-for-current-date/reviews/?filter=5#new-post"
+                           href="https://www.paypal.me/imtiazrayhan/"
                            target="_blank">Sure,
                             you deserve it.</a>
                         <a style="margin-right: 5px;" class="sfcd_HideReview_Notice button" href="javascript:void(0);">
