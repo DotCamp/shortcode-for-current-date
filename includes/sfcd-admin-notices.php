@@ -41,20 +41,19 @@ class SFCD_Admin_Notices {
         $datetime2 = new DateTime( $display_date );
         $diff_intrval = round( ($datetime2->format( 'U' ) - $datetime1->format( 'U' )) / (60 * 60 * 24) );
 
-		if ( $diff_intrval <= 7 && get_option( 'sfcd_review_notify' ) == "no" ) {
+		if ( get_option( 'sfcd_review_notify' ) == "no" ) {
 			?>
             <div class="sfcd-review-notice notice notice-info">
                 <p style="font-size: 14px;">
-					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! If you find it useful, please consider making a donation. Your donation will help encourage and support the plugin’s continued development and better user support. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
+					<?php _e( 'Hey, are you creating blog posts with the new Gutenberg Editor? If yes, then check out this <a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank">custom blocks plugin</a> that will help you to create more engaging blog posts.', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
-                           href="https://www.paypal.me/imtiazrayhan/"
-                           target="_blank">Sure,
-                            you deserve it.</a>
+                           href="https://wordpress.org/plugins/ultimate-blocks/"
+                           target="_blank">Let's Create More Engaging Posts with Gutenberg</>
                         <a style="margin-right: 5px;" class="sfcd_HideReview_Notice button" href="javascript:void(0);">
-                            I already did.</a>
-                        <a class="sfcd_HideReview_Notice button" href="javascript:void(0);">No, not good enough.</a>
+                            I already have it.</a>
+                        <a class="sfcd_HideReview_Notice button" href="javascript:void(0);">Not interested.</a>
                     </li>
                 </ul>
             </div>

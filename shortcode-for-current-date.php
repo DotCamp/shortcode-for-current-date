@@ -4,7 +4,7 @@
  * Plugin Name: Shortcode For Current Date
  * Plugin URI: http://wordpress.org/plugins/shortcode-for-current-date
  * Description: Insert current Date, Month or Year anywhere with a simple shortcode.
- * Version: 2.0.1
+ * Version: 2.0.2
  * Author: Imtiaz Rayhan
  * Author URI: http://imtiazrayhan.com
  * License: GPLv2 or later

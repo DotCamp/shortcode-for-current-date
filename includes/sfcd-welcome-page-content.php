@@ -49,24 +49,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<a class="ub_download_btn" href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
 	</div>
 
-	<div class="feature-section two-col" style="padding: 0">
-		<div class="col" style="margin-top: 0px;">
-			<h3><?php _e( 'Contact', 'sfcd' ); ?></h3>
-			<p class="about-text"><?php _e( 'If you have any questions or suggestions about the plugin, feel free to <a href="http://imtiazrayhan.com/contact/" target="_blank">get in touch</a>.', 'sfcd' ); ?></p>
-			<p class="about-text">Connect with me on <a href="http://facebook.com/imtiaz.rayhan.bleh" rel="nofollow">Facebook</a>, <a href="https://plus.google.com/u/0/+ImtiazRayhanAsif/" rel="nofollow">Google+</a> and <a href="https://twitter.com/asif_irayhan" rel="nofollow">Twitter</a>.</p>
-		</div>
-		<div class="col" style="margin-top: 0px;">
-			<h3><?php _e( 'Other Plugins', 'sfcd' ); ?></h3>
-			<p class="about-text"><?php _e( 'You can also check out these other plugins I have created.', 'sfcd' ); ?></p>
-			<ul class="about-text">
-				<li>
-					<a href="https://wordpress.org/plugins/wp-coupons-and-deals/" target="_blank">WP Coupons and Deals</a>
-				</li>
-				<li>
-					<a href="https://wordpress.org/plugins/icons-with-links-widget/" target="_blank">Icons with Links Widget</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-
 </div>
