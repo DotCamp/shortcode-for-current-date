@@ -45,11 +45,11 @@ class SFCD_Admin_Notices {
 			?>
             <div class="sfcd-review-notice notice notice-info">
                 <p style="font-size: 14px;">
-					<?php _e( 'Hey, are you creating blog posts with the new Gutenberg Editor? If yes, then check out this <a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank">custom blocks plugin</a> that will help you to create more engaging blog posts.', 'sfcd-coupon' ); ?>
+					<?php _e( 'Hey, are you creating blog posts with the new Gutenberg Editor? If yes, then check out this <a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank">custom blocks plugin</a> that will help you to create more engaging blog posts.', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
-                           href="https://wordpress.org/plugins/ultimate-blocks/"
+                           href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip"
                            target="_blank">Let's Create More Engaging Posts with Gutenberg</>
                         <a style="margin-right: 5px;" class="sfcd_HideReview_Notice button" href="javascript:void(0);">
                             I already have it.</a>

@@ -38,10 +38,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<br>
 		</div>
 		<div class="col">
-			<h3>Check Out This Cool Plugin - <span style="color: #f63d3d;"><a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank" style="color: #f63d3d;">Ultimate Blocks</span></a>!</h3>
+			<h3>Check Out This Cool Plugin - <span style="color: #f63d3d;"><a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank" style="color: #f63d3d;">Ultimate Blocks</span></a>!</h3>
 			<p class="about-text">Ultimate Blocks is a collection of essential custom blocks for Gutenberg Editor that makes it easier for you to create content with Gutenberg.</p>
 			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"><br><br><br>
-			<a class="ub_download_btn" href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
+			<a class="ub_download_btn" href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
 		</div>
 	</div>
 

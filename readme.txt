@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
 Tested up to: 5.0
-Stable tag: 2.0.2
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -14,7 +14,7 @@ Insert current Date, Month or Year anywhere in your WordPress site with a simple
 
 **Shortcode for Current Date** enables you to put current date, current month or current year anywhere in your WordPress site with a simple shortcode.
 
-Just use the shortcode **[current_date]** and when the post or page is displayed, **[current_date]** will be replaced by the current date.
+Just use the shortcode **[current_date]** and when the post or page is displayed, **[current_date]** will be replaced by the current date. And the date will be translated according to your site settings.
 
 [__Live Demo__](http://imtiazrayhan.com/show-current-date-month-year-in-wordpress/)
 
@@ -30,6 +30,15 @@ If you don't understand how this formatting works, that's totally okay.
 
 Check out [PHP date formats](http://php.net/manual/en/function.date.php) you can use.
 
+= What's Next =
+
+If you like this plugin, then consider checking out our other plugins:
+
+* <a href="https://wordpress.org/plugins/ultimate-blocks/" title="Ultimate Blocks">Ultimate Blocks</a> - Create Better Content with Gutenberg + Ultimate Blocks. Essential Collection of Blocks for Bloggers and Affiliate Marketers.
+* <a href="https://wordpress.org/plugins/wp-coupons-and-deals/" title="WP Coupons and Deals">WP Coupons and Deals</a> - Make More Money from Your Affiliate Coupons and Deals.
+
+Visit <a href="http://www.wpleaders.com/" rel="friend" title="WPLeaders">WPLeaders</a> to learn more about WordPress, WordPress themes and plugins.
+
 == Installation ==
 This is one way you can install the plugin:
 
@@ -44,6 +53,10 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.0.3 =
+
+* Used date_i18n() function to make the date translated according to site settings. Thanks to @themezee
 
 = 2.0.1 = 
 

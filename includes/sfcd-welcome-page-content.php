@@ -37,16 +37,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<p class="about-text">You can check out the <a href="<?php echo admin_url('options-general.php?page=sfcd_menu_page'); ?>" target="_blank" rel="noopener noreferrer">date formats here</a>.</p>
 	</div>
 	<div class="feature-section two-col">
-		<h2 style="text-align: left; margin: 0 !important;">Check Out Another Cool Plugin - <span style="color: #f63d3d;">Ultimate Blocks</span>!</h2>
+		<h2 style="text-align: left; margin: 0 !important; padding-top: 20px !important;">Create Better Content With Gutenberg and <span style="color: #f63d3d;">Ultimate Blocks</span>!</h2>
 		<div class="col">
 			<p class="about-text" style="margin-top: 0">Ultimate Blocks is a collection of essential custom blocks for Gutenberg Editor that makes it easier for you to create content with Gutenberg.</p>
 			<p class="about-text">Currently, we have 14 awesome blocks! More in the making.</p>
 			<p class="about-text">If you haven't checked out Gutenberg Editor yet, <a href="https://ultimateblocks.io/introduction-wordpress-gutenberg-editor/" target="_blank">learn about Gutenberg</a>.</p>
 		</div>
 		<div class="col">
-			<a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank"><img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"></a>			
+			<a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"></a>			
 		</div>
-		<a class="ub_download_btn" href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
+		<a class="ub_download_btn" href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
 	</div>
 
 </div>
