@@ -12,6 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$install_ub_url = \wp_nonce_url(
+	\self_admin_url( 'update.php?action=install-plugin&plugin=ultimate-blocks' ),
+	'install-plugin_ultimate-blocks'
+);
+
 ?>
 
 <div class="wrap about-wrap">
@@ -46,7 +51,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="col">
 			<a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"></a>			
 		</div>
-		<a class="ub_download_btn" href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
+		<a class="ub_download_btn" href="<?php echo \esc_url( $install_ub_url ); ?>"><span class="dashicons dashicons-wordpress"></span> Install Ultimate Blocks!</a>
 	</div>
 
 </div>

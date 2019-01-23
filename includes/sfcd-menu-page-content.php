@@ -12,6 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$install_ub_url = \wp_nonce_url(
+	\self_admin_url( 'update.php?action=install-plugin&plugin=ultimate-blocks' ),
+	'install-plugin_ultimate-blocks'
+);
+
 ?>
 
 <div class="wrap about-wrap">
@@ -41,7 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<h3>Check Out This Cool Plugin - <span style="color: #f63d3d;"><a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank" style="color: #f63d3d;">Ultimate Blocks</span></a>!</h3>
 			<p class="about-text">Ultimate Blocks is a collection of essential custom blocks for Gutenberg Editor that makes it easier for you to create content with Gutenberg.</p>
 			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"><br><br><br>
-			<a class="ub_download_btn" href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank"><span class="dashicons dashicons-wordpress"></span> Download Ultimate Blocks!</a>
+			<a class="ub_download_btn" href="<?php echo \esc_url( $install_ub_url ); ?>"><span class="dashicons dashicons-wordpress"></span> Install Ultimate Blocks!</a>
 		</div>
 	</div>
 
