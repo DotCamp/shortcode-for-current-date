@@ -30,24 +30,10 @@ $install_ub_url = \wp_nonce_url(
 
 	<div class="wp-badge welcome__logo"></div>
 
-	<div class="feature-section two-col">
-		<div class="col">
-			<h3><?php _e( "Let's Get Started", 'sfcd' ); ?></h3>
-			<p class="about-text">
-				In your post editor just put <strong>[current_date]</strong> where you want to show the date.<br><br>
-				If you want to show the month or year you would have to add something to the shortcode.
-				You would need to write the shortcode like this: <br><br><strong>[current_date format='F, Y']</strong>
-			</p>
-
-			<p class="about-text">The shortcode basically uses the PHP date function to generate the date, month or year. <br><br>That means, you can use any format the function accepts.</p>
-			<br>
-		</div>
-		<div class="col" style="padding-bottom: 60px !important; ">
-			<h3>Check Out This Cool Plugin - <span style="color: #f63d3d;"><a href="https://downloads.wordpress.org/plugin/ultimate-blocks.zip" target="_blank" style="color: #f63d3d;">Ultimate Blocks</span></a>!</h3>
-			<p class="about-text">Ultimate Blocks is a collection of essential custom blocks for Gutenberg Editor that makes it easier for you to create content with Gutenberg.</p>
-			<img width="500" height="300" src="<?php echo plugins_url( 'assets/img/screenshot.png', dirname( __FILE__ ) ); ?>"><br><br><br>
-			<a class="ub_download_btn" href="<?php echo \esc_url( $install_ub_url ); ?>"><span class="dashicons dashicons-wordpress"></span> Install Ultimate Blocks!</a>
-		</div>
+	<div class="col">
+		<h3><?php _e( "Let's Get Started", 'sfcd' ); ?></h3>
+		<p class="about-text">
+			In your post editor just put <strong>[current_date]</strong> where you want to show the date. If you want to show the month or year you would have to add something to the shortcode. You would need to write the shortcode like this: <strong>[current_date format='F, Y']</strong> <br><br>The shortcode basically uses the PHP date function to generate the date, month or year. That means, you can use any format the function accepts.</p>
 	</div>
 
 	<div class="col">
@@ -357,25 +343,11 @@ $install_ub_url = \wp_nonce_url(
 		</table>
 	</div>
 
-	<div class="feature-section two-col">
-		<div class="col">
-			<h3><?php _e( 'Help Us Spread the Word!', 'sfcd' ); ?></h3>
-			<p>Hey, if you like using this plugin, could you please do me a BIG favor and give it a 5-star rating on WordPress? Just to help us spread the word.
-			~ Imtiaz Rayhan</p>
-			<a class="button-primary" href="https://wordpress.org/support/plugin/shortcode-for-current-date/reviews/#new-post">Ok, You deserve it!</a>
-		</div>
-		<div class="col">
-			<h3><?php _e( 'Other Plugins', 'sfcd' ); ?></h3>
-			<p><?php _e( 'You can also check out these other plugins I have created.', 'sfcd' ); ?></p>
-			<ul>
-				<li>
-					<a href="https://wordpress.org/plugins/wp-coupons-and-deals/" target="_blank">WP Coupons and Deals</a>
-				</li>
-				<li>
-					<a href="https://wordpress.org/plugins/icons-with-links-widget/" target="_blank">Icons with Links Widget</a>
-				</li>
-			</ul>
-		</div>
+	<div class="col">
+		<h2 style="text-align: left;">We Have Other Very Useful Plugins for You!</h2>
+		<p class="about-text">1. <a href="https://wordpress.org/plugins/wp-table-builder/" target="_blank">WP Table Builder</a> - Drag and Drop Table Builder Plugin. Build Responsive Tables insanely easily.</p>
+		<p class="about-text">2. <a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank">Ultimate Blocks</a> - Custom Gutenberg Blocks for Bloggers and Marketers.</p>
+		<p class="about-text">3. <a href="https://wordpress.org/plugins/wp-coupons-and-deals/" target="_blank">WP Coupons and Deals</a> - Best Coupons Plugin for Bloggers and Affiliate Markters.</p>
 	</div>
 
 </div>
