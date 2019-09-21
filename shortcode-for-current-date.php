@@ -89,7 +89,7 @@ require_once plugin_dir_path( __FILE__ )  . '/includes/sfcd-admin-notices.php';
 
 SFCD_Welcome_Page::init();
 SFCD_Menu_Page::init();
-//SFCD_Admin_Notices::init();
+SFCD_Admin_Notices::init();
 
 register_activation_hook( __FILE__, array( 'SFCD_Welcome_Page', 'sfcd_welcome_activate' ) );
 register_deactivation_hook( __FILE__, array( 'SFCD_Welcome_Page', 'sfcd_welcome_deactivate' ) );

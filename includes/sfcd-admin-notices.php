@@ -1,10 +1,8 @@
 <?php
-
 // If accessed directly, exit
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-
 /**
  * Class SFCD_Admin_Notices
  *
@@ -13,51 +11,41 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 2.0
  */
 class SFCD_Admin_Notices {
-
 	/**
 	 * Adding the filter.
 	 *
 	 * @since 2.0
 	 */
 	public static function init() {
-
 		add_action( 'admin_notices', array( __CLASS__, 'review_notice' ), 20 );
 		add_action( 'wp_ajax_sfcdReviewNoticeHide', array( __CLASS__, 'sfcd_hide_review_notify' ) );
-
 	}
-
-
 	/**
 	 * Generating the review notice.
 	 *
 	 * @since 2.0
 	 */
 	public static function review_notice() {
-
-        $install_ub_url = \wp_nonce_url(
-			\self_admin_url( 'update.php?action=install-plugin&plugin=ultimate-blocks' ),
-			'install-plugin_ultimate-blocks'
-		);
-
         // Please rate us
         $install_date = get_option( 'sfcd_installDate' );
         $display_date = date( 'Y-m-d h:i:s' );
         $datetime1 = new DateTime( $install_date );
         $datetime2 = new DateTime( $display_date );
         $diff_intrval = round( ($datetime2->format( 'U' ) - $datetime1->format( 'U' )) / (60 * 60 * 24) );
-
-		if ( get_option( 'sfcd_review_notify' ) == "no" ) {
+		if ( $diff_intrval >= 7 && get_option( 'sfcd_review_notify' ) == "no" ) {
 			?>
             <div class="sfcd-review-notice notice notice-info">
-                <p style="font-size: 15px; line-height: 26px;">
-					<?php _e( 'Hey, thank you for using Shortcode for Current Date. We hope you are finding it useful. By the way, if you are using Gutenberg editor to create blog posts, we have another plugin that you will love. <a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank">Ultimate Blocks</a> plugin will help you create better blog posts with Gutenberg.', 'sfcd-coupon' ); ?>
+                <p style="font-size: 14px;">
+					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! Could you please do me a BIG favor and <b>give it a 5-star rating on WordPress</b>? Just to help me spread the word and boost my motivation. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
-                           href="<?php echo \esc_url( $install_ub_url ); ?>">Install Ultimate Blocks</br>
+                           href="https://wordpress.org/support/plugin/shortcode-for-current-date/reviews/?filter=5#new-post"
+                           target="_blank">Sure,
+                            you deserve it.</a>
                         <a style="margin-right: 5px;" class="sfcd_HideReview_Notice button" href="javascript:void(0);">
-                            I already have it.</a>
-                        <a class="sfcd_HideReview_Notice button" href="javascript:void(0);">Not interested.</a>
+                            I already did.</a>
+                        <a class="sfcd_HideReview_Notice button" href="javascript:void(0);">No, not good enough.</a>
                     </li>
                 </ul>
             </div>
@@ -81,21 +69,16 @@ class SFCD_Admin_Notices {
                 });
             </script>
 			<?php
-
 		}
-
 	}
-
 	/**
 	 * Hides the review notice.
 	 *
 	 * @since 2.0
 	 */
 	static function sfcd_hide_review_notify() {
-
 		update_option( 'sfcd_review_notify', 'yes' );
 		echo json_encode( array( "success" ) );
 		exit;
-
 	}
 }
