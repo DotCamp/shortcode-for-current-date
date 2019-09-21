@@ -49,8 +49,8 @@ class SFCD_Admin_Notices {
 		if ( get_option( 'sfcd_review_notify' ) == "no" ) {
 			?>
             <div class="sfcd-review-notice notice notice-info">
-                <p style="font-size: 14px;">
-					<?php _e( 'Hey, are you creating blog posts with the new Gutenberg Editor?<br>If yes, you will love Ultimate Blocks. We built Ultimate Blocks plugin to help you create better blog posts with Gutenberg.', 'sfcd-coupon' ); ?>
+                <p style="font-size: 15px; line-height: 26px;">
+					<?php _e( 'Hey, thank you for using Shortcode for Current Date. We hope you are finding it useful. By the way, if you are using Gutenberg editor to create blog posts, we have another plugin that you will love. <a href="https://wordpress.org/plugins/ultimate-blocks/" target="_blank">Ultimate Blocks</a> plugin will help you create better blog posts with Gutenberg.', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
