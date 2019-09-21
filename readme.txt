@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
 Tested up to: 5.2
-Stable tag: 2.0.6
+Stable tag: 2.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -34,6 +34,7 @@ Check out [PHP date formats](http://php.net/manual/en/function.date.php) you can
 
 If you like this plugin, then consider checking out our other plugins:
 
+* <a href="https://wordpress.org/plugins/wp-table-builder/" target="_blank">WP Table Builder</a> - Drag and Drop Table Builder Plugin. Build Responsive Tables insanely easily.
 * <a href="https://wordpress.org/plugins/ultimate-blocks/" title="Ultimate Blocks">Ultimate Blocks</a> - Create Better Content with Gutenberg + Ultimate Blocks. Essential Collection of Blocks for Bloggers and Affiliate Marketers.
 * <a href="https://wordpress.org/plugins/wp-coupons-and-deals/" title="WP Coupons and Deals">WP Coupons and Deals</a> - Make More Money from Your Affiliate Coupons and Deals.
 
@@ -53,6 +54,11 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.0.7 =
+
+* Tested with latest WordPress version.
+* Removed admin notice about other plugin.
 
 = 2.0.6 =
 
