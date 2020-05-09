@@ -1,10 +1,10 @@
 === Shortcode for Current Date ===
-Contributors: wpcdplugin, ultimateblocks, wpleaders1, imtiazrayhan, un_rick
+Contributors: imtiazrayhan, un_rick, wpcdplugin, ultimateblocks, wpleaders1, wptb, istiakrayhan
 Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
-Tested up to: 5.2
-Stable tag: 2.0.7
+Tested up to: 5.4
+Stable tag: 2.0.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -54,6 +54,10 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.0.8 =
+
+* Tested with WordPress 5.4.
 
 = 2.0.7 =
 
