@@ -4,7 +4,7 @@
  * Plugin Name: Shortcode For Current Date
  * Plugin URI: http://wordpress.org/plugins/shortcode-for-current-date
  * Description: Insert current Date, Month or Year anywhere with a simple shortcode.
- * Version: 2.0.8
+ * Version: 2.1.0
  * Author: Imtiaz Rayhan
  * Author URI: http://imtiazrayhan.com/
  * License: GPLv2 or later
@@ -53,7 +53,9 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 			 */
 			$atts = shortcode_atts(
 				array(
-					'format' => ''
+					'format' => '',
+					'size' => '',
+					'color' => ''
 				), $atts
 			);
 
@@ -69,11 +71,21 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 			 *
 			 * @author UN_Rick
 			 */
-			if ( $dateFormat == 'z' ) {
-				return date_i18n( $dateFormat ) + 1;
+			if ( !empty( $atts['size'] ) || !empty( $atts['color'] ) ) {
+				if ( $dateFormat == 'z' ) {
+					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . date_i18n( $dateFormat ) + 1 . "</p>";
+				} else {
+					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . date_i18n( $dateFormat ) . "</p>";
+				}
 			} else {
-				return date_i18n( $dateFormat );
+				if ( $dateFormat == 'z' ) {
+					return "<p class='sfcd-date'>" . date_i18n( $dateFormat ) + 1 . "</p>";
+				} else {
+					return "<p class='sfcd-date'>" . date_i18n( $dateFormat ) . "</p>";
+				}
 			}
+
+			
 
 		}
 

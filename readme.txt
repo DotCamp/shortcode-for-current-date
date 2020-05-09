@@ -4,7 +4,7 @@ Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
 Tested up to: 5.4
-Stable tag: 2.0.8
+Stable tag: 2.1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,23 @@ If you don't understand how this formatting works, that's totally okay.
 
 Check out [PHP date formats](http://php.net/manual/en/function.date.php) you can use.
 
+## Styling
+
+You can use 'size' and 'color' attributes to style the date.
+
+For example, [current_date format='d/m/Y' size='20px' color='#FF0000']
+
+You can also style all the dates by using CSS. You have to use the class 'sfcd-date'.
+
+For example - 
+
+```
+.sfcd-date {
+    font-size: 20px;
+    color: #FF0000;
+}
+```
+
 = What's Next =
 
 If you like this plugin, then consider checking out our other plugins:
@@ -54,6 +71,12 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.1.0 =
+
+* ADD: Option to Control Font Size.
+* ADD: Option to Control Font Color.
+* ADD: CSS Class to Control Style Globally.
 
 = 2.0.8 =
 

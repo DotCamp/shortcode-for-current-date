@@ -32,15 +32,15 @@ class SFCD_Admin_Notices {
         $datetime1 = new DateTime( $install_date );
         $datetime2 = new DateTime( $display_date );
         $diff_intrval = round( ($datetime2->format( 'U' ) - $datetime1->format( 'U' )) / (60 * 60 * 24) );
-		if ( $diff_intrval >= 7 && get_option( 'sfcd_review_notify' ) == "no" ) {
+		if ( $diff_intrval >= 14 && get_option( 'sfcd_review_notify' ) == "no" ) {
 			?>
             <div class="sfcd-review-notice notice notice-info">
                 <p style="font-size: 14px;">
-					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! Could you please do me a BIG favor and <b>give it a 5-star rating on WordPress</b>? Just to help me spread the word and boost my motivation. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
+					<?php _e( 'Hey,<br> I noticed that you have been using <b>Shortcode for Current Date Plugin</b> for a while now - that’s awesome! If you are finding it useful, consider buying me a cup of coffee. <br>~ Imtiaz Rayhan', 'sfcd-coupon' ); ?>
                 </p>
                 <ul>
                     <li><a style="margin-right: 5px; margin-bottom: 5px;" class="button-primary"
-                           href="https://wordpress.org/support/plugin/shortcode-for-current-date/reviews/?filter=5#new-post"
+                           href="https://www.paypal.me/imtiazrayhan/"
                            target="_blank">Sure,
                             you deserve it.</a>
                         <a style="margin-right: 5px;" class="sfcd_HideReview_Notice button" href="javascript:void(0);">
