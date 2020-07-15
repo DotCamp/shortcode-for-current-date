@@ -95,40 +95,41 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 
 /* Block Registration */
 function Shortcode_For_Current_Date_Block_Register() {
-	  wp_register_script(
-    'shortcode-for-current-date-editor-script',
-    plugins_url('dist/editor.js', __FILE__),
-    array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-date')
+
+	wp_register_script(
+    	'shortcode-for-current-date-editor-script',
+    	plugins_url('dist/editor.js', __FILE__),
+    	array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-date')
 	);
 
-	  wp_register_script(
-    'shortcode-for-current-date-script',
-    plugins_url('dist/script.js', __FILE__),
-    array('')
+	wp_register_script(
+    	'shortcode-for-current-date-script',
+    	plugins_url('dist/script.js', __FILE__),
+    	array('')
+  	);
+
+	wp_register_style(
+    	'shortcode-for-current-date-editor-style',
+    	plugins_url('dist/editor.css', __FILE__),
+    	array('wp-edit-blocks')
   );
 
-		  wp_register_style(
-    'shortcode-for-current-date-editor-style',
-    plugins_url('dist/editor.css', __FILE__),
-    array('wp-edit-blocks')
-  );
 
+	wp_register_style(
+    	'shortcode-for-current-date-style',
+    	plugins_url('dist/style.css', __FILE__)
+  	);
 
-	  wp_register_style(
-    'shortcode-for-current-date-style',
-    plugins_url('dist/style.css', __FILE__)
-  );
-
-		  register_block_type('shortcode-for-current-date/block',
-    array_merge(
-      array(
-        'editor_script' => 'shortcode-for-current-date-editor-script',
-        'editor_style' => 'shortcode-for-current-date-editor-style',
-        'script' => 'shortcode-for-current-date-script',
-        'style' => 'shortcode-for-current-date-style'
-      )
-    )
-  );
+	register_block_type('shortcode-for-current-date/block',
+    	array_merge(
+      		array(
+        		'editor_script' => 'shortcode-for-current-date-editor-script',
+        		'editor_style' => 'shortcode-for-current-date-editor-style',
+        		'script' => 'shortcode-for-current-date-script',
+        		'style' => 'shortcode-for-current-date-style'
+      		)
+    	)
+ 	);
 
 }
 /* END Block Registration */
