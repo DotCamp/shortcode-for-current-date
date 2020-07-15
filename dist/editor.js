@@ -142,17 +142,8 @@ var CurrentDateEdit = function CurrentDateEdit(_ref) {
       _useState4 = _slicedToArray(_useState3, 2),
       currentFormat = _useState4[0],
       setCurrentFormat = _useState4[1];
-
-  Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    if (!isSelected) {
-      setSelected(false);
-    }
-  }, [isSelected]);
   /* Methods */
 
-  var onSelect = function onSelect() {
-    setSelected(!selected);
-  };
 
   var onChangeCurrentFormat = function onChangeCurrentFormat(newFormat) {
     setCurrentFormat(newFormat);
@@ -166,36 +157,36 @@ var CurrentDateEdit = function CurrentDateEdit(_ref) {
   setAttributes({
     content: Object(_wordpress_date__WEBPACK_IMPORTED_MODULE_3__["format"])(currentFormat)
   });
-  return wp.element.createElement(wp.element.Fragment, null, wp.element.createElement("span", {
-    onClick: onSelect,
+  return wp.element.createElement(wp.element.Fragment, null, wp.element.createElement(_wordpress_editor__WEBPACK_IMPORTED_MODULE_1__["InspectorControls"], {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33,
+      lineNumber: 23,
       columnNumber: 4
     }
-  }, content), selected && wp.element.createElement("div", {
+  }, wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["PanelBody"], {
+    title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Format Settings', 'shortcode-for-current-date'),
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37,
+      lineNumber: 24,
       columnNumber: 5
     }
   }, wp.element.createElement(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["TextControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Date format", "current-date"),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])("Date format", "shortcode-for-current-date"),
     value: currentFormat,
     onChange: onChangeCurrentFormat,
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38,
+      lineNumber: 25,
       columnNumber: 6
     }
   }), wp.element.createElement("p", {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 30,
       columnNumber: 6
     }
   }, "Check the", " ", wp.element.createElement("a", {
@@ -205,10 +196,17 @@ var CurrentDateEdit = function CurrentDateEdit(_ref) {
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45,
+      lineNumber: 32,
       columnNumber: 7
     }
-  }, "PHP date formats"), " ", "you can use.")));
+  }, "PHP date formats"), " ", "you can use."))), wp.element.createElement("span", {
+    __self: _this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 4
+    }
+  }, content));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (CurrentDateEdit);
