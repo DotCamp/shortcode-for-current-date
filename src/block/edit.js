@@ -5,8 +5,7 @@ import { format } from "@wordpress/date";
 import { TextControl } from "@wordpress/components";
 
 const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
-	const { content, displayBlock } = attributes;
-	setAttributes({ content: format(currentFormat) });
+	const { content } = attributes;
 	/* React Hooks */
 	const [selected, setSelected] = useState(false);
 	const [currentFormat, setCurrentFormat] = useState("jS F Y");
@@ -22,30 +21,16 @@ const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 		setSelected(!selected);
 	};
 
-	const onChangeDisplayBlock = displayBlock => {
-		setAttributes({
-			displayBlock: displayBlock === "block" ? null : "block"
-		});
-	};
-
 	const onChangeCurrentFormat = newFormat => {
 		setCurrentFormat(newFormat);
 		setAttributes({ content: format(newFormat) });
 	};
+
+	/* Setting content */
+	setAttributes({ content: format(currentFormat) });
 	return (
 		<>
-			/*
-			<BlockControls
-				controls={[
-					{
-						icon: "admin-site",
-						title: __("block", "current-date"),
-						onClick: onChangeDisplayBlock
-					}
-				]}
-			/>
-			*/
-			<span onClick={onSelect} style={{ display: displayBlock }}>
+			<span onClick={onSelect}>
 				{content}
 			</span>
 			{selected && (
