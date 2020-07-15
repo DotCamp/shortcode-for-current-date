@@ -1,8 +1,8 @@
 import { useState, useEffect } from "@wordpress/element";
-import { BlockControls } from "@wordpress/editor";
+import { InspectorControls } from "@wordpress/editor";
 import { __ } from "@wordpress/i18n";
 import { format } from "@wordpress/date";
-import { TextControl } from "@wordpress/components";
+import { TextControl, PanelBody } from "@wordpress/components";
 
 const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 	const { content } = attributes;
@@ -10,17 +10,7 @@ const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 	const [selected, setSelected] = useState(false);
 	const [currentFormat, setCurrentFormat] = useState("jS F Y");
 
-	useEffect(() => {
-		if (!isSelected) {
-			setSelected(false);
-		}
-	}, [isSelected]);
-
 	/* Methods */
-	const onSelect = () => {
-		setSelected(!selected);
-	};
-
 	const onChangeCurrentFormat = newFormat => {
 		setCurrentFormat(newFormat);
 		setAttributes({ content: format(newFormat) });
@@ -30,13 +20,10 @@ const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 	setAttributes({ content: format(currentFormat) });
 	return (
 		<>
-			<span onClick={onSelect}>
-				{content}
-			</span>
-			{selected && (
-				<div>
+			<InspectorControls>
+				<PanelBody title={__('Format Settings', 'shortcode-for-current-date')}>
 					<TextControl
-						label={__("Date format", "current-date")}
+						label={__("Date format", "shortcode-for-current-date")}
 						value={currentFormat}
 						onChange={onChangeCurrentFormat}
 					/>
@@ -51,8 +38,9 @@ const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 						</a>{" "}
 						you can use.
 					</p>
-				</div>
-			)}
+				</PanelBody>
+			</InspectorControls>
+			<span>{content}</span>
 		</>
 	);
 };
