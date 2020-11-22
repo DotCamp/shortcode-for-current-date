@@ -73,7 +73,7 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 			 */
 			if ( !empty( $atts['size'] ) || !empty( $atts['color'] ) ) {
 				if ( $dateFormat == 'z' ) {
-					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . date_i18n( $dateFormat ) + 1 . "</p>";
+					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . ( date_i18n( $dateFormat ) + 1 ) . "</p>";
 				} else {
 					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . date_i18n( $dateFormat ) . "</p>";
 				}
