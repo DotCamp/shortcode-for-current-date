@@ -120,16 +120,19 @@ function Shortcode_For_Current_Date_Block_Register() {
     	plugins_url('dist/style.css', __FILE__)
   	);
 
-	register_block_type('shortcode-for-current-date/block',
-    	array_merge(
-      		array(
-        		'editor_script' => 'shortcode-for-current-date-editor-script',
-        		'editor_style' => 'shortcode-for-current-date-editor-style',
-        		'script' => 'shortcode-for-current-date-script',
-        		'style' => 'shortcode-for-current-date-style'
-      		)
-    	)
- 	);
+	if ( function_exists( 'register_block_type' ) ) {
+		register_block_type('shortcode-for-current-date/block',
+    		array_merge(
+      			array(
+        			'editor_script' => 'shortcode-for-current-date-editor-script',
+        			'editor_style' => 'shortcode-for-current-date-editor-style',
+        			'script' => 'shortcode-for-current-date-script',
+        			'style' => 'shortcode-for-current-date-style'
+      			)
+    		)
+ 		);
+	}
+	
 
 }
 /* END Block Registration */
