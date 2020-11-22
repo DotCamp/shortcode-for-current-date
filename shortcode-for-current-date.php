@@ -105,7 +105,7 @@ function Shortcode_For_Current_Date_Block_Register() {
 	wp_register_script(
     	'shortcode-for-current-date-script',
     	plugins_url('dist/script.js', __FILE__),
-    	array('')
+    	array()
   	);
 
 	wp_register_style(
