@@ -28,7 +28,6 @@ class SFCD_Welcome_Page {
 
 		delete_transient( '_sfcd_redirect_welcome' );
 		delete_option( 'sfcd_installDate', date( 'Y-m-d h:i:s' ) );
-		delete_option( 'sfcd_review_notify', 'no' );
 
 	}
 
