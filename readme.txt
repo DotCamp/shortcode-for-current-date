@@ -28,7 +28,15 @@ Here are some examples:
 
 If you don't understand how this formatting works, that's totally okay.
 
-Check out [PHP date formats](http://php.net/manual/en/function.date.php) you can use.
+Check out [date formats](https://imtiazrayhan.com/show-current-date-month-year-in-wordpress/#formats) you can use.
+
+## Gutenberg Block
+
+If you are using Gutenberg editor, there's a Current Date block you can use to insert the current date in your posts/pages. 
+
+If you use the block, you will not have to use the shortcode.
+
+When you insert the block, on the right sidebar under block options you will see a field to put the format for the date.
 
 ## Styling
 
