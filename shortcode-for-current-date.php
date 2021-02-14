@@ -108,18 +108,12 @@ function Shortcode_For_Current_Date_Block_Register() {
     	array()
   	);
 
-	wp_register_style(
-    	'shortcode-for-current-date-editor-style',
-    	plugins_url('dist/editor.css', __FILE__),
-    	array('wp-edit-blocks')
-  	);
 
 	if ( function_exists( 'register_block_type' ) ) {
 		register_block_type('shortcode-for-current-date/block',
     		array_merge(
       			array(
         			'editor_script' => 'shortcode-for-current-date-editor-script',
-        			'editor_style' => 'shortcode-for-current-date-editor-style',
         			'script' => 'shortcode-for-current-date-script'
       			)
     		)
