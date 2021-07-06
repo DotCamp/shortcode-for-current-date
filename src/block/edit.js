@@ -30,7 +30,7 @@ const CurrentDateEdit = ({ attributes, setAttributes, isSelected }) => {
 					<p>
 						Check the{" "}
 						<a
-							href="https://imtiazrayhan.com/show-current-date-month-year-in-wordpress/#formats"
+							href="https://www.php.net/manual/en/datetime.formats.date.php"
 							rel="noopener noreferrer"
 							target="_blank"
 						>

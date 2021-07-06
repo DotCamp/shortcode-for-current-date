@@ -3,8 +3,8 @@ Contributors: imtiazrayhan, un_rick, wpcdplugin, ultimateblocks, wpleaders1, wpt
 Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
-Tested up to: 5.5
-Stable tag: 2.1.4
+Tested up to: 5.7
+Stable tag: 2.1.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,8 +16,6 @@ Insert current Date, Month or Year anywhere in your WordPress site with a simple
 
 Just use the shortcode **[current_date]** and when the post or page is displayed, **[current_date]** will be replaced by the current date. And the date will be translated according to your site settings.
 
-[__Live Demo__](http://imtiazrayhan.com/show-current-date-month-year-in-wordpress/)
-
 By default it will show a date like this: 7th May 2017
 
 But you can customize it to your needs. To do that, you'll need to pass the date format using an attribute with the shortcode.
@@ -27,8 +25,6 @@ Here are some examples:
 **[current_date format='F d, Y']** will show the date like this: **May 07, 2017**
 
 If you don't understand how this formatting works, that's totally okay.
-
-Check out [date formats](https://imtiazrayhan.com/show-current-date-month-year-in-wordpress/#formats) you can use.
 
 ## Gutenberg Block
 
@@ -69,6 +65,10 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.1.5 = 
+
+* Security issue fix.
 
 = 2.1.4 =
 

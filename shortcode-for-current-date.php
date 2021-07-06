@@ -6,7 +6,7 @@
  * Description: Insert current Date, Month or Year anywhere with a simple shortcode.
  * Version: 2.1.4
  * Author: Imtiaz Rayhan
- * Author URI: http://imtiazrayhan.com/
+ * Author URI: http://dotcamp.com/
  * License: GPLv2 or later
  * Text Domain: sfcd
  * @package sfcd_plugin

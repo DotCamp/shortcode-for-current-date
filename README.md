@@ -6,8 +6,6 @@
 
 Shortcode for Current Date is a WordPress Plugin to show the current date or month or year on WordPress Posts/Pages.
 
-[Live Demo](http://imtiazrayhan.com/show-current-date-month-year-in-wordpress/)
-
 
 ## Get Started
 
