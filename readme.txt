@@ -3,8 +3,8 @@ Contributors: imtiazrayhan, un_rick, wpcdplugin, ultimateblocks, wpleaders1, wpt
 Donate Link: https://www.paypal.me/imtiazrayhan/
 Tags: shortcode, current date, month, year
 Requires at least: 4.0
-Tested up to: 5.7
-Stable tag: 2.1.5
+Tested up to: 6.0
+Stable tag: 2.1.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,10 @@ Another way :
 4. Click on Install button and activate the plugin.
 
 == Changelog ==
+
+= 2.1.7 =
+
+* Security updates.
 
 = 2.1.5 = 
 
