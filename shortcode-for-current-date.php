@@ -4,7 +4,7 @@
  * Plugin Name: Shortcode For Current Date
  * Plugin URI: http://wordpress.org/plugins/shortcode-for-current-date
  * Description: Insert current Date, Month or Year anywhere with a simple shortcode.
- * Version: 2.1.5
+ * Version: 2.1.7
  * Author: Imtiaz Rayhan
  * Author URI: http://dotcamp.com/
  * License: GPLv2 or later
@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
+if ( ! class_exists( 'Shortcode_For_Current_Date' ) ) {
 
 	/**
 	 * Class Shortcode_For_Current_Date. Contains everything.
@@ -54,13 +54,13 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 			$atts = shortcode_atts(
 				array(
 					'format' => '',
-					'size' => '',
-					'color' => ''
+					'size'   => '',
+					'color'  => ''
 				), $atts
 			);
 
-			if ( !empty( $atts['format'] ) ) {
-				$dateFormat = $atts['format'];
+			if ( ! empty( $atts['format'] ) ) {
+				$dateFormat = sanitize_text_field( $atts['format'] );
 			} else {
 				$dateFormat = 'jS F Y';
 			}
@@ -71,11 +71,14 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 			 *
 			 * @author UN_Rick
 			 */
-			if ( !empty( $atts['size'] ) || !empty( $atts['color'] ) ) {
+			if ( ! empty( $atts['size'] ) || ! empty( $atts['color'] ) ) {
+				$size_attr  = esc_attr( $atts['size'] );
+				$color_attr = esc_attr( $atts['color'] );
+
 				if ( $dateFormat == 'z' ) {
-					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . ( date_i18n( $dateFormat ) + 1 ) . "</p>";
+					return "<p class='sfcd-date' style='font-size:" . $size_attr . "; color: " . $color_attr . ";'>" . ( date_i18n( $dateFormat ) + 1 ) . "</p>";
 				} else {
-					return "<p class='sfcd-date' style='font-size:" . $atts['size'] . "; color: " . $atts['color'] . ";'>" . date_i18n( $dateFormat ) . "</p>";
+					return "<p class='sfcd-date' style='font-size:" . $size_attr . "; color: " . $color_attr . ";'>" . date_i18n( $dateFormat ) . "</p>";
 				}
 			} else {
 				if ( $dateFormat == 'z' ) {
@@ -84,51 +87,47 @@ if ( !class_exists( 'Shortcode_For_Current_Date' ) ) {
 					return date_i18n( $dateFormat );
 				}
 			}
-
-			
-
 		}
-
 	}
-
 }
 
 /* Block Registration */
 function Shortcode_For_Current_Date_Block_Register() {
 
 	wp_register_script(
-    	'shortcode-for-current-date-editor-script',
-    	plugins_url('dist/editor.js', __FILE__),
-    	array('wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-date')
+		'shortcode-for-current-date-editor-script',
+		plugins_url( 'dist/editor.js', __FILE__ ),
+		array( 'wp-blocks', 'wp-i18n', 'wp-element', 'wp-editor', 'wp-components', 'wp-date' )
 	);
 
 	wp_register_script(
-    	'shortcode-for-current-date-script',
-    	plugins_url('dist/script.js', __FILE__),
-    	array()
-  	);
+		'shortcode-for-current-date-script',
+		plugins_url( 'dist/script.js', __FILE__ ),
+		array()
+	);
 
 
 	if ( function_exists( 'register_block_type' ) ) {
-		register_block_type('shortcode-for-current-date/block',
-    		array_merge(
-      			array(
-        			'editor_script' => 'shortcode-for-current-date-editor-script',
-        			'script' => 'shortcode-for-current-date-script'
-      			)
-    		)
- 		);
+		register_block_type( 'shortcode-for-current-date/block',
+			array_merge(
+				array(
+					'editor_script' => 'shortcode-for-current-date-editor-script',
+					'script'        => 'shortcode-for-current-date-script'
+				)
+			)
+		);
 	}
-	
+
 
 }
+
 /* END Block Registration */
 
 new Shortcode_For_Current_Date();
 
-require_once plugin_dir_path( __FILE__ )  . '/includes/sfcd-welcome-page.php';
-require_once plugin_dir_path( __FILE__ )  . '/includes/sfcd-menu-page.php';
-require_once plugin_dir_path( __FILE__ )  . '/includes/sfcd-admin-notices.php';
+require_once plugin_dir_path( __FILE__ ) . '/includes/sfcd-welcome-page.php';
+require_once plugin_dir_path( __FILE__ ) . '/includes/sfcd-menu-page.php';
+require_once plugin_dir_path( __FILE__ ) . '/includes/sfcd-admin-notices.php';
 
 SFCD_Welcome_Page::init();
 SFCD_Menu_Page::init();
