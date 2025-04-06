@@ -4,7 +4,7 @@
  * Plugin Name: Shortcode For Current Date
  * Plugin URI: http://wordpress.org/plugins/shortcode-for-current-date
  * Description: Insert current Date, Month or Year anywhere with a simple shortcode.
- * Version: 2.1.9
+ * Version: 2.2.0
  * Author: Imtiaz Rayhan
  * Author URI: http://dotcamp.com/
  * License: GPLv2 or later
@@ -139,3 +139,7 @@ register_deactivation_hook( __FILE__, array( 'SFCD_Welcome_Page', 'sfcd_welcome_
 add_filter( 'the_title', 'do_shortcode' );
 add_action( 'init', 'Shortcode_For_Current_Date_Block_Register' );
 
+// Initialize promoter.
+require_once dirname( __FILE__ ) . '/vendor/autoload.php';
+$default_promotions = \DotCamp\Promoter\Promoter::generate_default_promotions(__FILE__, 'Shortcode For Current Date', 'shortcode-for-current-date/shortcode-for-current-date.php');
+\DotCamp\Promoter\Promoter::add_promotions($default_promotions, __FILE__);

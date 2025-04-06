@@ -1,0 +1,14 @@
+{
+    "name": "dotcamp/shortcode-for-current-date",
+    "description": "currently this composer file is only for testing purposes and no production libraries included",
+    "type": "project",
+    "require": {
+        "dotcamp/promoter": "^1.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "vendor/dotcamp/promoter"
+        }
+    ]
+}
