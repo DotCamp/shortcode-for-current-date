@@ -31,18 +31,6 @@ $default_promotions = array(
 	array(
 		'plugin_name'   => 'Ultimate Blocks',
 		'plugin_id'     => 'ultimate-blocks/ultimate-blocks.php',
-		'description'   => 'The Image Slider Block for WordPress lets you add beautiful image sliders to your WordPress Posts/pages.',
-		'blocks_to_use' => array(
-			'core/image',
-			'core/media-text',
-			'core/gallery',
-		),
-		'link_href'     => 'https://ultimateblocks.com/image-slider-block/',
-		'link_label'    => 'Demo',
-	),
-	array(
-		'plugin_name'   => 'Ultimate Blocks',
-		'plugin_id'     => 'ultimate-blocks/ultimate-blocks.php',
 		'description'   => 'The Video Block is designed to enhance your web content presentation by displaying videos into web posts and pages.',
 		'blocks_to_use' => array(
 			'core/video',
